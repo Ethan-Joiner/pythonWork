@@ -22,3 +22,16 @@ tyler = {
 }
 
 students = [lloyd, alice, tyler]
+
+"""for each student in your students list, print out that student‘s data, as follows:
+
+print the student‘s name
+print the student‘s homework
+print the student‘s quizzes
+print the student‘s tests"""
+
+for student in students:
+  print student["name"]
+  print student["homework"]
+  print student["quizzes"]
+  print student["tests"]

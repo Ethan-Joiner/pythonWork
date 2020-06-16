@@ -52,3 +52,11 @@ stock = {
   "orange": 32,
   "pear": 15
 }
+
+"""Loop through each key in prices.
+For each key, print out the key along with its price and stock information."""
+
+for key in prices:
+  print key
+  print "price: %s" % prices[key]
+  print "stock: %s" % stock[key]

@@ -71,3 +71,6 @@ total = 0
 for key in prices:
   total += prices[key] * stock[key]
 print total
+
+# First, make a list called groceries with the values "banana","orange", and "apple".
+groceries = ["banana", "orange", "apple"]

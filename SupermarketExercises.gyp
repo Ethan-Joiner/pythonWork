@@ -60,3 +60,14 @@ for key in prices:
   print key
   print "price: %s" % prices[key]
   print "stock: %s" % stock[key]
+
+"""Let’s determine how much money you would make if you sold all of your food.
+
+Create a variable called total and set it to zero.
+Loop through the prices dictionary.
+For each key in prices, multiply the number in prices by the number in stock. Print that value into the console and then add it to total.
+Finally, outside your loop, print total."""
+total = 0
+for key in prices:
+  total += prices[key] * stock[key]
+print total

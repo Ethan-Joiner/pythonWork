@@ -15,3 +15,7 @@ Set the value associated with 'Rockhopper Penguin' to anything other than 'Arcti
 del zoo_animals["Sloth"]
 del zoo_animals["Bengal Tiger"]
 zoo_animals["Rockhopper Penguin"] = "Anything other than 'Arctic Exhibit'"
+
+# Remove 'dagger' from the list of items stored in the backpack variable.
+backpack = ['xylophone', 'dagger', 'tent', 'bread loaf']
+backpack.remove("dagger")

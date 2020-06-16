@@ -80,3 +80,7 @@ def get_class_average(class_list):
   for student in class_list:
     results.append(get_average(student))
   return average(results)
+
+# Print the class average as a number, and as a letter grade
+print get_class_average(students)
+print get_letter_grade(get_class_average(students))

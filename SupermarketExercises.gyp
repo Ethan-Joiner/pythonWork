@@ -38,3 +38,10 @@ def fizz_count(x):
       count += 1
 
   return count   
+
+  prices = {
+  "banana": 4,
+  "apple": 2,
+  "orange": 1.5,
+  "pear": 3
+}

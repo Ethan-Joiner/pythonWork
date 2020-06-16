@@ -74,3 +74,15 @@ print total
 
 # First, make a list called groceries with the values "banana","orange", and "apple".
 groceries = ["banana", "orange", "apple"]
+
+"""Define a function compute_bill that takes one argument food as input.
+In the function, create a variable total with an initial value of zero.
+For each item in the food list, add the price of that item to total.
+Finally, return the total.
+Ignore whether or not the item you’re billing for is in stock.Note that your function should work for any food list."""
+def compute_bill(food):
+  total = 0
+  for item in food:
+    print item
+    total += prices[item]
+  return total

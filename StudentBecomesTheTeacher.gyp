@@ -41,3 +41,10 @@ def average(numbers):
   total = sum(numbers)
   total = float(total)
   return total / len(numbers)  
+
+# Write a function called get_average that takes a student dictionary (like lloyd, alice, or tyler) as input and returns his/her weighted average.
+def get_average(student):
+  homework = average(student["homework"]) 
+  quizzes = average(student["quizzes"]) 
+  tests = average(student["tests"])   
+  return homework * .1 + quizzes * .3 + tests * .6   

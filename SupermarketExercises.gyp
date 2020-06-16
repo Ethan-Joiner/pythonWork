@@ -14,3 +14,12 @@ for name in names:
 
 for key in webster:
   print webster[key]
+
+"""Like step 2 above, loop through each item in the list called a.
+
+Like step 3 above, if the number is even, print it out. You can test if the item % 2 == 0 to help you out."""
+a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+for number in a:
+  if number % 2 == 0:
+    print number

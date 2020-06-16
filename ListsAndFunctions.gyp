@@ -22,3 +22,10 @@ def add_function(x,y):
   return x + y
 
 print add_function(m, n)
+
+# Define a function to return the first index of a list
+def list_function(x):
+  return x[1]
+
+n = [3, 5, 7]
+print list_function(n)

@@ -35,3 +35,9 @@ for student in students:
   print student["homework"]
   print student["quizzes"]
   print student["tests"]
+
+# Write a function average that takes a list of numbers and returns the average.
+def average(numbers):
+  total = sum(numbers)
+  total = float(total)
+  return total / len(numbers)  

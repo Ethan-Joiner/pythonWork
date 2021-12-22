@@ -15,9 +15,13 @@ number2 = 30
 
 # print(product_or_sum(number1,number2))
 
-# Velocity Vector Problem
+# 2d vector
 
-def velocity_vector(x,y,z):
+def vector(x,y):
+    return math.sqrt(pow(x,2) + pow(y,2))
+# 3d Vector Problem
+
+def vector(x,y,z):
     return math.sqrt(pow(x,2) + pow(y,2) + pow(z,2))
 
 # print(velocity_vector(-12,8,-2))
@@ -26,11 +30,17 @@ def velocity_vector(x,y,z):
 def scalar_multiplication(multi,x,y,z):
     return math.sqrt(pow(multi * x, 2) + pow(multi * y, 2) + pow(multi * z, 2))
 
-print(scalar_multiplication(3,2,-7,1))
+# print(scalar_multiplication(3,2,-7,1))
 
 
-# Dot Product
+# Dot Product 2d vector
 def dot_product_2d_vector(x,y):
-    return (x[0] * y[0]) + (x[1] + y[1])
+    return (x[0] * y[0]) + (x[1] * y[1])
 
-print(dot_product_2d_vector([-17,22],[0,32]))
+# print(dot_product_2d_vector([-17,22],[0,32]))
+
+# Vector angle 2d
+def vector_angle_2d(x,y):
+    return dot_product_2d_vector(x,y) / (vector(x[0],x[1] * vector(y[0],y[1])))
+
+print(vector_angle_2d([-17,22],[0,32]))

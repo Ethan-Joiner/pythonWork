@@ -17,11 +17,11 @@ number2 = 30
 
 # 2d vector
 
-def vector(x,y):
+def vector_2d(x,y):
     return math.sqrt(pow(x,2) + pow(y,2))
 # 3d Vector Problem
 
-def vector(x,y,z):
+def vector_3d(x,y,z):
     return math.sqrt(pow(x,2) + pow(y,2) + pow(z,2))
 
 # print(velocity_vector(-12,8,-2))
@@ -37,10 +37,24 @@ def scalar_multiplication(multi,x,y,z):
 def dot_product_2d_vector(x,y):
     return (x[0] * y[0]) + (x[1] * y[1])
 
+# Dot Product 3d vector
+def dot_product_3d_vector(x,y):
+    return (x[0] * y[0]) + (x[1] * y[1]) + (x[2] + y[2])
+
 # print(dot_product_2d_vector([-17,22],[0,32]))
 
 # Vector angle 2d
 def vector_angle_2d(x,y):
-    return dot_product_2d_vector(x,y) / (vector(x[0],x[1] * vector(y[0],y[1])))
+    print("First vector is %d" % (vector_2d(x[0],x[1])))
+    print("Second vector is %d" % (vector_2d(y[0],y[1])))
+    return dot_product_2d_vector(x,y) / (vector_2d(x[0],x[1] * vector_2d(y[0],y[1])))
 
 print(vector_angle_2d([-17,22],[0,32]))
+
+# Vector angle 3d
+def vector_angle_3d(x,y):
+    print("First vector is %d" % (vector_3d(x[0],x[1],x[2])))
+    print("Second vector is %d" % (vector_3d(y[0],y[1],y[2])))
+    return dot_product_3d_vector(x,y) / (vector_3d(x[0],x[1],x[2] * vector_3d(y[0],y[1],y[2])))
+
+print(vector_angle_3d([3,2,-3],[0,-3,-6]))

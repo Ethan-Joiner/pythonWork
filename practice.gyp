@@ -59,13 +59,13 @@ def vector_angle_3d(x,y):
 
 # print(vector_angle_3d([3,2,-3],[0,-3,-6]))
 
-# Find count of substring occurrences in string
+# COMPLETE: Find count of substring occurrences in string
 def count_substring(string, sub_string):
     count = 0
     sub_length = len(sub_string)
     for i in range(len(string)):
         print ('%d index' % (i))
-        if string[i] == sub_string[0] and i + len(sub_string) != len(string):
+        if string[i] == sub_string[0] and i + len(sub_string) <= len(string):
             print ('%s line 68' % (i))
             index = i
             temp_count = 0

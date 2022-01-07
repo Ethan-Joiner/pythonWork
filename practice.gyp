@@ -49,7 +49,7 @@ def vector_angle_2d(x,y):
     print("Second vector is %d" % (vector_2d(y[0],y[1])))
     return dot_product_2d_vector(x,y) / (vector_2d(x[0],x[1] * vector_2d(y[0],y[1])))
 
-print(vector_angle_2d([-17,22],[0,32]))
+# print(vector_angle_2d([-17,22],[0,32]))
 
 # Vector angle 3d
 def vector_angle_3d(x,y):
@@ -57,15 +57,17 @@ def vector_angle_3d(x,y):
     print("Second vector is %d" % (vector_3d(y[0],y[1],y[2])))
     return dot_product_3d_vector(x,y) / (vector_3d(x[0],x[1],x[2] * vector_3d(y[0],y[1],y[2])))
 
-print(vector_angle_3d([3,2,-3],[0,-3,-6]))
+# print(vector_angle_3d([3,2,-3],[0,-3,-6]))
 
 # Find count of substring occurrences in string
 def count_substring(string, sub_string):
     count = 0
     sub_length = len(sub_string)
-    for letter in range(sub_length):
-        if letter == sub_string[0]:
-            index = string[letter]
+    for i in range(len(string)):
+        print ('%d index' % (i))
+        if string[i] == sub_string[0] and i + len(sub_string) != len(string):
+            print ('%s line 68' % (i))
+            index = i
             temp_count = 0
             for sub_letter in sub_string:
                 if sub_letter == string[index]:
@@ -75,3 +77,5 @@ def count_substring(string, sub_string):
                 count +=1
             temp_count = 0
     return count
+
+print(count_substring('dogloldog', 'dog'))

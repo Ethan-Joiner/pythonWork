@@ -78,4 +78,38 @@ def count_substring(string, sub_string):
             temp_count = 0
     return count
 
-print(count_substring('dogloldog', 'dog'))
+# print(count_substring('dogloldog', 'dog'))
+
+def check_letters(s):
+    for letter in s:
+        a = False
+        b = False
+        c = False
+        d = False
+        e = False
+        print (letter)
+        if letter.isalnum():
+            print ('a changed')
+            a = True
+        
+        if letter.isalpha():
+            print ('b changed')
+            b = True
+
+        if letter.isdigit():
+            print ('c changed')
+            c = True
+           
+        if letter.islower():
+            print ('d changed')
+            d = True
+        
+        if letter.isupper():
+            print ('e changed')
+            e = True           
+    print (a)
+    print (b)
+    print (c)
+    print (d)
+    print (e)
+check_letters('qA2')

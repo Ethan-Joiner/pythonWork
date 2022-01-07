@@ -80,33 +80,29 @@ def count_substring(string, sub_string):
 
 # print(count_substring('dogloldog', 'dog'))
 
+# Completed : String validators
 def check_letters(s):
+    a = False
+    b = False
+    c = False
+    d = False
+    e = False
     for letter in s:
-        a = False
-        b = False
-        c = False
-        d = False
-        e = False
-        print (letter)
         if letter.isalnum():
-            print ('a changed')
             a = True
         
         if letter.isalpha():
-            print ('b changed')
             b = True
 
         if letter.isdigit():
-            print ('c changed')
             c = True
            
         if letter.islower():
-            print ('d changed')
             d = True
         
         if letter.isupper():
-            print ('e changed')
-            e = True           
+            e = True          
+ 
     print (a)
     print (b)
     print (c)

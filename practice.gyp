@@ -58,3 +58,20 @@ def vector_angle_3d(x,y):
     return dot_product_3d_vector(x,y) / (vector_3d(x[0],x[1],x[2] * vector_3d(y[0],y[1],y[2])))
 
 print(vector_angle_3d([3,2,-3],[0,-3,-6]))
+
+# Find count of substring occurrences in string
+def count_substring(string, sub_string):
+    count = 0
+    sub_length = len(sub_string)
+    for letter in range(sub_length):
+        if letter == sub_string[0]:
+            index = string[letter]
+            temp_count = 0
+            for sub_letter in sub_string:
+                if sub_letter == string[index]:
+                    temp_count += 1
+                    index +=1
+            if temp_count == sub_length:
+                count +=1
+            temp_count = 0
+    return count
